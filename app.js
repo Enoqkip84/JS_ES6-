@@ -113,7 +113,7 @@ let and const - You cannot access the variable and value
 
 /*
 =============================================
-TEMPLATE STRINGS/LITERALS
+TEMPLATE STRINGS/LITERALS - innerHtml
 =============================================
 */
 
@@ -127,3 +127,15 @@ const result = document.getElementById('result');
 // result.innerHTML =
 //   '<h1>' + person.name + '</h1>' + '<p>' + person.hobbies + '</p>';
 // console.log(person.name, person.hobbies);
+
+// template  string/literals
+
+result.innerHTML = `
+<h2>${person.name}</h2>
+<p>${person.job}</p>
+<ul> ${person.hobbies
+  .map((item) => {
+    return `<li>${item}</li>`;
+  })
+  .join('')}</ul>
+`;
