@@ -116,3 +116,14 @@ let and const - You cannot access the variable and value
 TEMPLATE STRINGS/LITERALS
 =============================================
 */
+
+const person = {
+  name: 'Kyle',
+  job: 'developer',
+  hobbies: ['surfing', 'baking', 'bowling'],
+};
+
+const result = document.getElementById('result');
+// result.innerHTML =
+//   '<h1>' + person.name + '</h1>' + '<p>' + person.hobbies + '</p>';
+// console.log(person.name, person.hobbies);
