@@ -39,3 +39,34 @@ const - cannot redefine,  mutate primitive type
 // const person = { name: 'bob' };
 // person.name = 'john';
 // console.log(person.name);
+
+/*
+================
+Global scope 
+.................
+var - only function scope
+let and const - block scope - Anything within curly braces { }
+*/
+
+// Global scope variables
+
+var amount = 100; //any variable outside function is global scope - can be accessed anywhere within the document.
+
+function greet() {
+  //local scope - this will work well with let and const as well
+  var random = 'some random value';
+  console.log(`Hello there ${amount} ${random}`); //both global and local variable are accessed within the function.
+}
+
+// console.log(random); // big fat error
+
+// greet();
+
+var total = 1000;
+var test = true;
+
+if (test) {
+  console.log('Hello there');
+}
+
+console.log(total);
