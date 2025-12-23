@@ -50,23 +50,69 @@ let and const - block scope - Anything within curly braces { }
 
 // Global scope variables
 
-var amount = 100; //any variable outside function is global scope - can be accessed anywhere within the document.
+// var amount = 100; //any variable outside function is global scope - can be accessed anywhere within the document.
 
-function greet() {
-  //local scope - this will work well with let and const as well
-  var random = 'some random value';
-  console.log(`Hello there ${amount} ${random}`); //both global and local variable are accessed within the function.
-}
+// function greet() {
+//   //local scope - this will work well with let and const as well
+//   var random = 'some random value';
+//   console.log(`Hello there ${amount} ${random}`); //both global and local variable are accessed within the function.
+// }
 
-// console.log(random); // big fat error
+// // console.log(random); // big fat error
 
-// greet();
+// // greet();
 
-var total = 1000;
-var test = true;
+// // var
+// // var total = 1000;
+// // var test = true;
 
-if (test) {
-  console.log('Hello there');
-}
+// // if (test) {
+// //   var total = 'oranges plus onions';
+// //   console.log('Hello there');
+// // }
 
-console.log(total);
+// // console.log(total);
+
+// // let
+// let total = 50000;
+// let test = true;
+
+// if (test) {
+//   //local scope
+//   let total = 'oranges plus onions';
+//   let value = 'some random value';
+//   console.log(`Hello there ${total} are ${value}`);
+// }
+// // console.log(value);
+// {
+//   let total = 2000;
+//   console.log(total);
+// }
+// {
+//   let total = 5000;
+//   console.log(total);
+// }
+
+// console.log(total);
+
+/*
+============================
+Initialization of variables
+............................
+var - you can access a variable but not value before initialization
+let and const - You cannot access the variable and value
+*/
+
+// var
+// console.log(amount);
+// var amount = 300; //throws undefined, it access the variable and not the value
+
+// let and const
+// console.log(amount);
+// let amount = 300;
+
+/*
+=============================================
+TEMPLATE STRINGS/LITERALS
+=============================================
+*/
