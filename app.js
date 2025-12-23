@@ -117,25 +117,40 @@ TEMPLATE STRINGS/LITERALS - innerHtml
 =============================================
 */
 
-const person = {
-  name: 'Kyle',
-  job: 'developer',
-  hobbies: ['surfing', 'baking', 'bowling'],
-};
+// const person = {
+//   name: 'Kyle',
+//   job: 'developer',
+//   hobbies: ['surfing', 'baking', 'bowling'],
+// };
+
+// const result = document.getElementById('result');
+// // result.innerHTML =
+// //   '<h1>' + person.name + '</h1>' + '<p>' + person.hobbies + '</p>';
+// // console.log(person.name, person.hobbies);
+
+// // template  string/literals
+
+// result.innerHTML = `
+// <h2>${person.name}</h2>
+// <p>${person.job}</p>
+// <ul> ${person.hobbies
+//   .map((item) => {
+//     return `<li>${item}</li>`;
+//   })
+//   .join('')}</ul>
+// `;
+
+/*
+=============================================
+TEMPLATE STRINGS/LITERALS - innerHtml using ES6
+=============================================
+*/
+
+const author = 'Some Author';
+const statement = 'Some Statement';
+
+const quote = `here is the ${statement} by ${author} and it could not be more true`;
+console.log(quote);
 
 const result = document.getElementById('result');
-// result.innerHTML =
-//   '<h1>' + person.name + '</h1>' + '<p>' + person.hobbies + '</p>';
-// console.log(person.name, person.hobbies);
-
-// template  string/literals
-
-result.innerHTML = `
-<h2>${person.name}</h2>
-<p>${person.job}</p>
-<ul> ${person.hobbies
-  .map((item) => {
-    return `<li>${item}</li>`;
-  })
-  .join('')}</ul>
-`;
+result.innerHTML = quote;
