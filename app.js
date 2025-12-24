@@ -148,18 +148,28 @@ Tagged, TEMPLATE STRINGS/LITERALS - innerHtml using ES6
 - we return the value from the function
 */
 
-const author = 'Some Author!';
-const statement = 'Some Statement!';
+// const author = 'Some Author!';
+// const statement = 'Some Statement!';
 
-const quote = hightlight`here is the ${statement} by ${author} and it could not be more true`;
-console.log(quote);
+// const quote = hightlight`here is the ${statement} by ${author} and it could not be more true`;
+// console.log(quote);
 
-const result = document.getElementById('result');
-result.innerHTML = quote;
+// const result = document.getElementById('result');
+// result.innerHTML = quote;
 
-function hightlight(text, ...vars) {
-  const awesomeText = text.map((item, index) => {
-    return `${item} <strong>${vars[index] || ''}</strong>`;
-  });
-  return awesomeText.join('');
-}
+// function hightlight(text, ...vars) {
+//   const awesomeText = text.map((item, index) => {
+//     return `${item} <strong>${vars[index] || ''}</strong>`;
+//   });
+//   return awesomeText.join('');
+// }
+
+/*
+=============================================
+ARROW FUNCTIONS
+=============================================
+-Arrow function or Fat Arrow Functions
+-no name, always expression, assign to a variable
+-no function keyword
+-'this'
+*/
