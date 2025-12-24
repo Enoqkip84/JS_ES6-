@@ -142,15 +142,20 @@ TEMPLATE STRINGS/LITERALS - innerHtml
 
 /*
 =============================================
-TEMPLATE STRINGS/LITERALS - innerHtml using ES6
+Tagged, TEMPLATE STRINGS/LITERALS - innerHtml using ES6
 =============================================
 */
 
-const author = 'Some Author';
-const statement = 'Some Statement';
+const author = 'Some Author!';
+const statement = 'Some Statement!';
 
 const quote = `here is the ${statement} by ${author} and it could not be more true`;
 console.log(quote);
 
 const result = document.getElementById('result');
 result.innerHTML = quote;
+
+function hightlight() {
+  console.log();
+  return 'hello there';
+}
