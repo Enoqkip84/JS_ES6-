@@ -149,7 +149,7 @@ Tagged, TEMPLATE STRINGS/LITERALS - innerHtml using ES6
 const author = 'Some Author!';
 const statement = 'Some Statement!';
 
-const quote = `here is the ${statement} by ${author} and it could not be more true`;
+const quote = hightlight`here is the <strong class='blue'>${statement} </strong>by ${author} and it could not be more true`;
 console.log(quote);
 
 const result = document.getElementById('result');
@@ -157,5 +157,5 @@ result.innerHTML = quote;
 
 function hightlight() {
   console.log();
-  return 'hello there';
+  return 'Hello there';
 }
