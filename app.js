@@ -158,6 +158,8 @@ const result = document.getElementById('result');
 result.innerHTML = quote;
 
 function hightlight(text, ...vars) {
-  console.log({ text, vars });
-  return 'Hello there';
+  const awesomeText = text.map((item, index) => {
+    return `${item} <strong>${vars[index]}</strong>`;
+  });
+  return awesomeText.join('');
 }
