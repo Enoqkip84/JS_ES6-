@@ -144,18 +144,20 @@ TEMPLATE STRINGS/LITERALS - innerHtml
 =============================================
 Tagged, TEMPLATE STRINGS/LITERALS - innerHtml using ES6
 =============================================
+- Once we run out function, we pass in template string in the function
+- we return the value from the function
 */
 
 const author = 'Some Author!';
 const statement = 'Some Statement!';
 
-const quote = hightlight`here is the <strong class='blue'>${statement} </strong>by ${author} and it could not be more true`;
+const quote = hightlight`here is the ${statement} by ${author} and it could not be more true`;
 console.log(quote);
 
 const result = document.getElementById('result');
 result.innerHTML = quote;
 
-function hightlight() {
-  console.log();
+function hightlight(text, ...vars) {
+  console.log({ text, vars });
   return 'Hello there';
 }
