@@ -213,3 +213,8 @@ ARROW FUNCTIONS
 // console.log(sum);
 
 // return object
+
+const object = () => ({ name: 'john', age: 23 });
+
+const person = object();
+console.log(person);
