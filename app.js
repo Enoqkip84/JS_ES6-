@@ -173,3 +173,23 @@ ARROW FUNCTIONS
 -no function keyword
 -'this'
 */
+//recap: How to set up functions
+
+// first way
+// function sayHi() {
+//   console.log('Hello world!!!');
+// }
+// sayHi();
+
+// second way
+
+// const hello = function (name) {
+//   console.log(`hello ${name}`);
+// };
+
+// hello('bob');
+
+// third - Arrow function
+const sayHi = () => console.log('Hello world');
+
+sayHi();
