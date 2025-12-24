@@ -190,6 +190,12 @@ ARROW FUNCTIONS
 // hello('bob');
 
 // third - Arrow function
+
 const sayHi = () => console.log('Hello world');
 
 sayHi();
+
+const double = (value) => value * 2;
+
+const num = double(4);
+console.log(num);
