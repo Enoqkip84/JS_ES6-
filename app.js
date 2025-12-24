@@ -191,11 +191,25 @@ ARROW FUNCTIONS
 
 // third - Arrow function
 
-const sayHi = () => console.log('Hello world');
+// const sayHi = () => console.log('Hello world');
 
-sayHi();
+// sayHi();
 
-const double = (value) => value * 2;
+// const double = (value) => value * 2;
 
-const num = double(4);
-console.log(num);
+// const num = double(4);
+// console.log(num);
+
+// //two parameters and more than one line
+
+// const multiply = (num1, num2) => {
+//   const result = num1 * num2;
+
+//   // more code here
+//   return result;
+// };
+
+// sum = multiply(4, 6);
+// console.log(sum);
+
+// return object
