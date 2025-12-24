@@ -159,7 +159,7 @@ result.innerHTML = quote;
 
 function hightlight(text, ...vars) {
   const awesomeText = text.map((item, index) => {
-    return `${item} <strong>${vars[index]}</strong>`;
+    return `${item} <strong>${vars[index] || ''}</strong>`;
   });
   return awesomeText.join('');
 }
