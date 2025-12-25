@@ -258,7 +258,11 @@ const bob = {
   lastName: 'smith',
   sayName: function () {
     console.log(this);
-    setTimeout(function () {
+    // const self = this;
+    setTimeout(() => {
+      console.log(this);
+      // console.log(self);
+
       console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
     }, 2000);
   },
@@ -274,4 +278,4 @@ const anna = {
 };
 
 bob.sayName();
-// anna.sayName();
+anna.sayName();
