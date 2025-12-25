@@ -214,7 +214,22 @@ ARROW FUNCTIONS
 
 // return object
 
-const object = () => ({ name: 'john', age: 23 });
+// const object = () => ({ name: 'john', age: 23 });
 
-const person = object();
-console.log(person);
+// const person = object();
+// console.log(person);
+
+//Arrow functions as callback functions
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const big = numbers.filter((numbers) => numbers > 2);
+console.log(big);
+
+// with 2 or more parameters
+
+const bigger = numbers.filter((number, index) => {
+  console.log(index);
+  return number > 2;
+});
+
+console.log(bigger);
