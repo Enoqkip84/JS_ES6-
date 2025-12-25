@@ -236,11 +236,42 @@ ARROW FUNCTIONS
 
 // Arrow function as add event listener callback functions
 
-const btn = document.querySelector('.btn');
+// const btn = document.querySelector('.btn');
 
-const quote = document.getElementById('head');
+// const quote = document.getElementById('head');
 
-btn.addEventListener('click', () => {
-  console.log('You clicked me');
-  btn.innerHTML = quote.innerHTML;
-});
+// btn.addEventListener('click', () => {
+//   console.log('You clicked me');
+//   btn.innerHTML = quote.innerHTML;
+// });
+
+/*
+=================================================
+Arrow Functions - Object and 'this'
+=================================================
+-Arrow Functions or Fat Arrow Functions
+-reg function: 'This' refers parent, left of the dot
+-arrow function: refers to it's current surrounding scope
+*/
+const bob = {
+  firstName: 'bob',
+  lastName: 'smith',
+  sayName: function () {
+    console.log(this);
+    setTimeout(function () {
+      console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
+    }, 2000);
+  },
+};
+
+const anna = {
+  firstName: 'anna',
+  lastName: 'jackson',
+  sayName: () => {
+    console.log(this);
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
+  },
+};
+
+bob.sayName();
+// anna.sayName();
