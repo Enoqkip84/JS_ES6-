@@ -221,15 +221,26 @@ ARROW FUNCTIONS
 
 //Arrow functions as callback functions
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const big = numbers.filter((numbers) => numbers > 2);
-console.log(big);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const big = numbers.filter((numbers) => numbers > 2);
+// console.log(big);
 
-// with 2 or more parameters
+// // with 2 or more parameters - set up paranthesis
 
-const bigger = numbers.filter((number, index) => {
-  console.log(index);
-  return number > 2;
+// const bigger = numbers.filter((number, index) => {
+//   console.log(index);
+//   return number > 2;
+// });
+
+// console.log(bigger);
+
+// Arrow function as add event listener callback functions
+
+const btn = document.querySelector('.btn');
+
+const quote = document.getElementById('head');
+
+btn.addEventListener('click', () => {
+  console.log('You clicked me');
+  btn.innerHTML = quote.innerHTML;
 });
-
-console.log(bigger);
