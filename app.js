@@ -327,8 +327,8 @@ Array Destructuring
 */
 
 // how to unpack values
-const fruit = ['orange', 'banana', 'lemon'];
-const friends = ['john', 'peter', 'bob', 'anna', 'kelly'];
+// const fruit = ['orange', 'banana', 'lemon'];
+// const friends = ['john', 'peter', 'bob', 'anna', 'kelly'];
 
 // const orange = fruit[0];
 // const banana = fruit[1];
@@ -344,5 +344,15 @@ const friends = ['john', 'peter', 'bob', 'anna', 'kelly'];
 
 // skipping some array elements in the index
 
-const [enemy, , bob, , kelly] = friends; //skip using double commas, NB name does not matter since index is what we are looking at.
-console.log(enemy, bob, kelly);
+// const [enemy, , bob, , kelly] = friends; //skip using double commas, NB name does not matter since index is what we are looking at.
+// console.log(enemy, bob, kelly);
+
+/*
+=============================================================
+SWAP Variables
+=============================================================
+ - Destructuring swap variables
+ -fatser/easier way ti access/unpack values from arrays
+ -Objet into variables
+ -arrays. 
+*/
