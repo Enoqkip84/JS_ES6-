@@ -253,29 +253,91 @@ Arrow Functions - Object and 'this'
 -reg function: 'This' refers parent, left of the dot
 -arrow function: refers to it's current surrounding scope
 */
-const bob = {
-  firstName: 'bob',
-  lastName: 'smith',
-  sayName: function () {
-    console.log(this);
-    // const self = this;
-    setTimeout(() => {
-      console.log(this);
-      // console.log(self);
+// const bob = {
+//   firstName: 'bob',
+//   lastName: 'smith',
+//   sayName: function () {
+//     console.log(this);
+//     // const self = this;
+//     setTimeout(() => {
+//       console.log(this);
+//       // console.log(self);
 
-      console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
-    }, 2000);
-  },
-};
+//       console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
+//     }, 2000);
+//   },
+// };
 
-const anna = {
-  firstName: 'anna',
-  lastName: 'jackson',
-  sayName: () => {
-    console.log(this);
-    console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
-  },
-};
+// const anna = {
+//   firstName: 'anna',
+//   lastName: 'jackson',
+//   sayName: () => {
+//     console.log(this);
+//     console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
+//   },
+// };
 
-bob.sayName();
-anna.sayName();
+// bob.sayName();
+// anna.sayName();
+
+/*
+=================================================
+Arrow Functions - Select Elements and  'this'
+=================================================
+*/
+
+// const btn = document.querySelector('.btn');
+// btn.addEventListener('click', function () {
+//   console.log(this);
+//   setTimeout(() => {
+//     console.log(this);
+
+//     this.style.color = 'black';
+//     this.style.background = 'yellow';
+//   }, 2000);
+// });
+
+/*
+=============================================================
+Arrow Functions - default parameters, arrow function gotchas
+=============================================================
+Arrow function has defult parameters as a fallback
+Arrow function does not support hoisting like the regular functions
+*/
+
+// const john = 'John';
+// const peter = 'Peter';
+
+// function sayHi(person = 'Susan') {
+//   console.log(`Hi ${person}`);
+// }
+
+// sayHi();
+
+// const sayHello = (person = 'Sussy') => console.log(`Hi ${person} `);
+// sayHello();
+
+/*
+=============================================================
+Array Destructuring
+=============================================================
+-This is a faster way to access/unpack values from arrays or objects or when passing in as parameters in functions. 
+
+-arrays
+*/
+
+// how to unpack values
+const fruit = ['orange', 'banana', 'lemon'];
+const friends = ['john', 'peter', 'bob', 'anna', 'kelly'];
+
+// const orange = fruit[0];
+// const banana = fruit[1];
+// const lemon = fruit[2];
+
+// console.log(orange, banana, lemon);
+
+// destructuring using ES6
+const [john, peter, bob] = friends;
+console.log(john, peter, bob);
+const [orange, banana, lemon] = fruit;
+console.log(orange, banana, lemon);
