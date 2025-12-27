@@ -356,3 +356,14 @@ SWAP Variables
  -Objet into variables
  -arrays. 
 */
+let first = 'bob';
+let second = 'john';
+
+let temp = second;
+second = first;
+first = temp;
+
+console.log(first, second);
+
+second = first;
+first = temp;
