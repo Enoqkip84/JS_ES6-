@@ -337,7 +337,12 @@ const friends = ['john', 'peter', 'bob', 'anna', 'kelly'];
 // console.log(orange, banana, lemon);
 
 // destructuring using ES6
-const [john, peter, bob] = friends;
-console.log(john, peter, bob);
-const [orange, banana, lemon] = fruit;
-console.log(orange, banana, lemon);
+// const [john, peter, bob] = friends;
+// console.log(john, peter, bob);
+// const [orange, banana, lemon] = fruit;
+// console.log(orange, banana, lemon);
+
+// skipping some array elements in the index
+
+const [enemy, , bob, , kelly] = friends; //skip using double commas, NB name does not matter since index is what we are looking at.
+console.log(enemy, bob, kelly);
