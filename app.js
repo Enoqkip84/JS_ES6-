@@ -359,11 +359,13 @@ SWAP Variables
 let first = 'bob';
 let second = 'john';
 
-let temp = second;
-second = first;
-first = temp;
+// let temp = second;
+// second = first;
+// first = temp;
+
+// array destructuring
+
+[second, first] = [first, second]; //destructuring the array,(first part), and second part, first, holds value of the first index, and  second, holds value of the second index
+//after destructuring, you assign the value of second to the first index, and value of first to the seond index.
 
 console.log(first, second);
-
-second = first;
-first = temp;
