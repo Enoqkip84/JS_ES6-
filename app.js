@@ -379,14 +379,14 @@ Objects Destructuring
 -arrays
 */
 
-const bob = {
-  first: 'bob',
-  last: 'sanders',
-  city: 'chicago',
-  sibling: {
-    sister: 'Jane',
-  },
-};
+// const bob = {
+//   first: 'bob',
+//   last: 'sanders',
+//   city: 'chicago',
+//   sibling: {
+//     sister: 'Jane',
+//   },
+// };
 
 // console.log(bob);
 
