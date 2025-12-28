@@ -411,6 +411,5 @@ Objects Destructuring
 functions Destructuring
 =============================================================
 -This is a faster way to access/unpack values from arrays or objects or when passing in as parameters in functions. 
-
 -arrays
 */
