@@ -356,8 +356,8 @@ SWAP Variables
  -Objet into variables
  -arrays. 
 */
-let first = 'bob';
-let second = 'john';
+// let first = 'bob';
+// let second = 'john';
 
 // let temp = second;
 // second = first;
@@ -365,7 +365,35 @@ let second = 'john';
 
 // array destructuring
 
-[second, first] = [first, second]; //destructuring the array,(first part), and second part, first, holds value of the first index, and  second, holds value of the second index
+// [second, first] = [first, second]; //destructuring the array,(first part), and second part, first, holds value of the first index, and  second, holds value of the second index
 //after destructuring, you assign the value of second to the first index, and value of first to the seond index.
 
-console.log(first, second);
+// console.log(first, second);
+
+/*
+=============================================================
+Objects Destructuring
+=============================================================
+-This is a faster way to access/unpack values from arrays or objects or when passing in as parameters in functions. 
+
+-arrays
+*/
+
+const bob = {
+  first: 'bob',
+  last: 'sanders',
+  city: 'chicago',
+  sibling: {
+    sister: 'Jane',
+  },
+};
+
+console.log(bob);
+
+const firstName = bob.first;
+const lastName = bob.last;
+const sister = bob.sibling.sister;
+
+console.log(firstName, lastName, sister);
+
+// destructuring
