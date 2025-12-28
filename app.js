@@ -388,12 +388,20 @@ const bob = {
   },
 };
 
-console.log(bob);
+// console.log(bob);
 
-const firstName = bob.first;
-const lastName = bob.last;
-const sister = bob.sibling.sister;
+// const firstName = bob.first;
+// const lastName = bob.last;
+// const sister = bob.sibling.sister;
 
-console.log(firstName, lastName, sister);
+// console.log(firstName, lastName, sister);
 
 // destructuring
+const {
+  first: firstName,
+  last,
+  city,
+  sibling: { sister: favSister },
+} = bob; //unlike array, properties name needs to match!!!!
+//we can also add alias name if we wan to change the name e.g adding alias firstNAme to firts, by using : (colon) especially if the name is already taken somewhere in the large project variable names.
+console.log(firstName, last, city, favSister);
