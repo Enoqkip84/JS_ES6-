@@ -413,3 +413,18 @@ functions Destructuring!
 -This is a faster way to access/unpack values from arrays or objects or when passing in as parameters in functions. 
 -arrays
 */
+
+const bob = {
+  first: 'bob',
+  last: 'sanders',
+  city: 'chicago',
+  sibling: {
+    sister: 'jane',
+  },
+};
+
+function printPerson({ first, last, city: zitu }) {
+  // const { first, last, city, sibling,{sister:sissy}} = person;
+  console.log(first, last, zitu);
+}
+printPerson(bob);
