@@ -423,10 +423,10 @@ const bob = {
   },
 };
 
-function printPerson({ first, last, city: zitu }) {
+function printPerson({ first, last, city }) {
   //instead of passing the parameter as a whole object, we destructure first.
   //very useful in react, we have components i.e params and pass in props like arguments
   // const { first, last, city, sibling,{sister:sissy}} = person;
-  console.log(first, last, zitu);
+  console.log(first, last, city);
 }
 printPerson(bob);
