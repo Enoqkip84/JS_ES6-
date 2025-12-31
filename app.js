@@ -444,3 +444,7 @@ New String Methods
 ============================================================
 - startsWith(), endsWith(), includes(), repeat()
 */
+
+const person = 'Peter Smith';
+const employee = '23456-EMP-PETER-SMITH';
+const manager = '23456-MAN-JOHN-DOE';
