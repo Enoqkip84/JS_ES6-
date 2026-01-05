@@ -450,4 +450,4 @@ const employee = '23456-EMP-PETER-SMITH';
 const manager = '23456-MAN-JOHN-DOE';
 
 //StartsWith
-console.log();
+console.log(person);
