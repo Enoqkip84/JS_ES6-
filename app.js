@@ -472,5 +472,7 @@ New String Methods
 ============================================================
 "for of" - Loop
 ============================================================
-- startsWith(), endsWith(), includes(), repeat()
+for of - Loops through the values of an iterable object
+String, Array, Map, Set e.t.c - NOT OBJECT
+unlike forEach, - We can use break, continue
 */
