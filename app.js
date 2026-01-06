@@ -477,24 +477,32 @@ String, Array, Map, Set e.t.c - NOT OBJECT
 unlike forEach, - We can use break, continue
 */
 
-const fruits = ['apple', 'orange', 'banana', 'peach'];
-const longName = 'John Smith Pepper III';
-let shortName = '';
+// const fruits = ['apple', 'orange', 'banana', 'peach'];
+// const longName = 'John Smith Pepper III';
+// let shortName = '';
 
-for (const letters of longName) {
-  // console.log(letters);
-  if (letters == ' ') {
-    continue;
-  } else {
-    shortName += letters;
-  }
-}
-// console.log(shortName);
+// for (const letters of longName) {
+//   // console.log(letters);
+//   if (letters == ' ') {
+//     continue;
+//   } else {
+//     shortName += letters;
+//   }
+// }
+// // console.log(shortName);
 
-for (const fruit of fruits) {
-  if (fruit === 'banana') {
-    // break;
-    continue; //dont fall off the if statement(jump to the next)
-  }
-  console.log(fruit);
-}
+// for (const fruit of fruits) {
+//   if (fruit === 'banana') {
+//     // break;
+//     continue; //dont fall off the if statement(jump to the next)
+//   }
+//   console.log(fruit);
+// }
+
+/*
+============================================================
+Spread Operator - Basics 
+============================================================
+This allows an iterable to spread/expand individually inside receiver
+Splits into single items and copy them
+*/
