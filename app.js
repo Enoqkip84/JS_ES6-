@@ -538,6 +538,9 @@ const person = {
   job: 'developer',
 };
 
-const newPerson = { ...person, city: 'chicago' };
+// const newPerson = { ...person, city: 'chicago' };
+//overwrighting
+const newPerson = { ...person, city: 'chicago', name: 'peter' }; //overridding the name variable with peter
+
 console.log(newPerson);
 console.log(person);
