@@ -464,3 +464,4 @@ const manager = '23456-MAN-JOHN-DOE';
 // console.log(employee.includes('sMITH')); //case sensitive
 
 // repeat
+const multiplyPeople = (person, amount) => person.repeat();
