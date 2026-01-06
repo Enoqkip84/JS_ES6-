@@ -493,7 +493,8 @@ for (const letters of longName) {
 
 for (const fruit of fruits) {
   if (fruit === 'banana') {
-    break;
+    // break;
+    continue; //dont fall off the if statement(jump to the next)
   }
   console.log(fruit);
 }
