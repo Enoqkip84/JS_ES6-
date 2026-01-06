@@ -533,3 +533,11 @@ Spread Operator - Objects
 -Split into single item and copy them. 
 -ES2018 -ES8
 */
+const person = {
+  name: 'john',
+  job: 'developer',
+};
+
+const newPerson = { ...person, city: 'chicago' };
+console.log(newPerson);
+console.log(person);
