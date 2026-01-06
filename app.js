@@ -532,15 +532,30 @@ Spread Operator - Objects
 -Allows an iterables to spread/expand individually inside the receiver 
 -Split into single item and copy them. 
 -ES2018 -ES8
+// */
+// const person = {
+//   name: 'john',
+//   job: 'developer',
+// };
+
+// // const newPerson = { ...person, city: 'chicago' };
+// //overwrighting
+// const newPerson = { ...person, city: 'chicago', name: 'peter' }; //overridding the name variable with peter
+
+// console.log(newPerson);
+// console.log(person);
+
+/*
+============================================================
+Spread Operator - DOM ELEMENTS 
+============================================================
+-Allows an iterables to spread/expand individually inside the receiver 
+-Split into single item and copy them. 
+-ES2018 -ES8
 */
-const person = {
-  name: 'john',
-  job: 'developer',
-};
 
-// const newPerson = { ...person, city: 'chicago' };
-//overwrighting
-const newPerson = { ...person, city: 'chicago', name: 'peter' }; //overridding the name variable with peter
+const headings = document.querySelectorAll('h1');
+const result = document.getElementById('result');
 
-console.log(newPerson);
-console.log(person);
+console.log(headings);
+console.log(result);
