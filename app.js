@@ -450,4 +450,17 @@ const employee = '23456-EMP-PETER-SMITH';
 const manager = '23456-MAN-JOHN-DOE';
 
 //StartsWith
-console.log(person);
+// console.log(person);
+// console.log(person.startsWith('Pe')); //Case sensitive- trie
+// console.log(person.startsWith('pe')); //Case sensitive-false
+// console.log(employee.startsWith('EMP', 6));
+
+// ends with
+// console.log(manager.endsWith('DOE'));
+// console.log(manager.endsWith('MAN', 9));
+
+// includes
+// console.log(employee.includes('SMITH'));
+// console.log(employee.includes('sMITH')); //case sensitive
+
+// repeat
