@@ -506,21 +506,30 @@ Spread Operator - Basics
 This allows an iterable to spread/expand individually inside receiver
 Splits into single items and copy them
 */
-const udemy = 'udemy';
-const letters = [...udemy];
-console.log(letters);
+// const udemy = 'udemy';
+// const letters = [...udemy];
+// console.log(letters);
 
-const boys = ['john', 'peter', 'bob'];
-const girls = ['susan', 'anna'];
-const bestFriend = 'anorld';
+// const boys = ['john', 'peter', 'bob'];
+// const girls = ['susan', 'anna'];
+// const bestFriend = 'anorld';
 
-const friends = [...boys, bestFriend, ...girls];
-console.log(friends);
-// reference
-// const newFriends = friends;
+// const friends = [...boys, bestFriend, ...girls];
+// console.log(friends);
+// // reference
+// // const newFriends = friends;
 
-// copying without referencing
-const newFriends = [...friends];
-newFriends[0] = 'Karina';
-console.log(newFriends);
-console.log(friends);
+// // copying without referencing
+// const newFriends = [...friends];
+// newFriends[0] = 'Karina';
+// console.log(newFriends);
+// console.log(friends);
+
+/*
+============================================================
+Spread Operator - Objects 
+============================================================
+-Allows an iterables to spread/expand individually inside the receiver 
+-Split into single item and copy them. 
+-ES2018 -ES8
+*/
