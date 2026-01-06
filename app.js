@@ -445,9 +445,9 @@ New String Methods
 - startsWith(), endsWith(), includes(), repeat()
 */
 
-const person = 'Peter Smith,';
-const employee = '23456-EMP-PETER-SMITH';
-const manager = '23456-MAN-JOHN-DOE';
+// const person = 'Peter Smith,';
+// const employee = '23456-EMP-PETER-SMITH';
+// const manager = '23456-MAN-JOHN-DOE';
 
 //StartsWith
 // console.log(person);
@@ -464,6 +464,13 @@ const manager = '23456-MAN-JOHN-DOE';
 // console.log(employee.includes('sMITH')); //case sensitive
 
 // repeat
-const multiplyPeople = (person, amount = 5) => person.repeat(amount);
-const people = multiplyPeople(person);
-console.log(people);
+// const multiplyPeople = (person, amount = 5) => person.repeat(amount);
+// const people = multiplyPeople(person);
+// console.log(people);
+
+/*
+============================================================
+"for of" - Loop
+============================================================
+- startsWith(), endsWith(), includes(), repeat()
+*/
