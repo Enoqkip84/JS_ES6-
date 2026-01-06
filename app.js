@@ -557,5 +557,10 @@ Spread Operator - DOM ELEMENTS
 const headings = document.querySelectorAll('h1');
 const result = document.getElementById('result');
 
-console.log(headings);
-console.log(result);
+// console.log(headings);
+// console.log(result);
+
+const text = [...headings]
+  .map((item) => `<span>${item.textContent}</span>`)
+  .join(' ');
+result.innerHTML = text;
