@@ -554,13 +554,26 @@ Spread Operator - DOM ELEMENTS
 -ES2018 -ES8
 */
 
-const headings = document.querySelectorAll('h1');
-const result = document.getElementById('result');
+// const headings = document.querySelectorAll('h1');
+// const result = document.getElementById('result');
 
-// console.log(headings);
-// console.log(result);
+// // console.log(headings);
+// // console.log(result);
 
-const text = [...headings]
-  .map((item) => `<span>${item.textContent}</span>`)
-  .join('');
-result.innerHTML = text;
+// const text = [...headings]
+//   .map((item) => `<span>${item.textContent}</span>`)
+//   .join('');
+// result.innerHTML = text;
+
+/*
+============================================================
+Spread Operator - FUNCTIONS ARGUMENTS 
+============================================================
+-Allows an iterables to spread/expand individually inside the receiver 
+-Split into single item and copy them. 
+-ES2018 -ES8
+*/
+const numbers = [23, 45, 66, 88, 2345];
+
+// console.log(Math.max(4, 5, 6, 7, 88, 99));
+console.log(Math.max(...numbers));
