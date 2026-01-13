@@ -573,16 +573,42 @@ Spread Operator - FUNCTIONS ARGUMENTS
 -Split into single item and copy them. 
 -ES2018 -ES8
 */
-const numbers = [23, 45, 66, 88, 2345];
+// const numbers = [23, 45, 66, 88, 2345];
 
-// console.log(Math.max(4, 5, 6, 7, 88, 99));
-console.log(Math.max(...numbers));
+// // console.log(Math.max(4, 5, 6, 7, 88, 99));
+// console.log(Math.max(...numbers));
 
-const john = ['John', 'sanders'];
+// const john = ['John', 'sanders'];
 
-const sayHello = (name, lastName) => {
-  console.log(`Hello ${name} ${lastName}`);
+// const sayHello = (name, lastName) => {
+//   console.log(`Hello ${name} ${lastName}`);
+// };
+
+// sayHello(john[0], john[1]);
+// sayHello(...john);
+
+/*
+============================================================
+REST Operator
+============================================================
+-Rest Operator ...
+-Gathers/Collects the items
+NB: the three dots behaves differently when using spread and Rest. 
+
+Rest Operators are used in two different ways: Destructuring arrays/objects and when gathering parameters in a function 
+*/
+
+//arrays
+const fruit = ['apple', 'orange', 'lemon'];
+const [first] = fruit;
+console.log(first);
+
+// objects
+const person = {
+  name: 'john',
+  lastName: 'smith',
+  job: 'developer',
 };
 
-sayHello(john[0], john[1]);
-sayHello(...john);
+const { job } = person;
+console.log(job);
