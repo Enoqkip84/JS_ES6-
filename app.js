@@ -628,3 +628,9 @@ console.log(first, fruits);
 const person = { name: 'john', lastName: 'smith', job: 'developer' };
 const { job, ...rest } = person;
 console.log(job, rest);
+
+const getAverage = (name, ...scores) => {
+  console.log(name);
+  console.log(scores);
+};
+getAverage();
