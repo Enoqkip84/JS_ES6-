@@ -590,6 +590,7 @@ Spread Operator - FUNCTIONS ARGUMENTS
 /*
 ============================================================
 REST Operator
+// Rest operator use case number 1 - Destructuring arrays and objects, we employ REST operator 
 ============================================================
 -Rest Operator ...
 -Gathers/Collects the items
@@ -599,12 +600,19 @@ Rest Operators are used in two different ways: Destructuring arrays/objects and 
 */
 
 //arrays
-const fruit = ['apple', 'orange', 'lemon', 'Pie'];
-const [first, second, ...rest] = fruit;
-console.log(first, rest);
+// const fruit = ['apple', 'orange', 'lemon', 'Pie'];
+// const [first, second, ...fruits] = fruit;
+// console.log(first, fruits);
 
-// objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
-const person = { name: 'john', lastName: 'smith', job: 'developer' };
-const { job } = person;
-console.log(job);
-// const { job } = person;
+// // objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
+// const person = { name: 'john', lastName: 'smith', job: 'developer' };
+// const { job, ...rest } = person;
+// console.log(job, rest);
+
+/*
+============================================================
+REST Operator
+- Rest operator use case number 2
+- collecting parameters when passing in the functions. 
+============================================================
+*/
