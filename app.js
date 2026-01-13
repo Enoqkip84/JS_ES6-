@@ -613,6 +613,18 @@ Rest Operators are used in two different ways: Destructuring arrays/objects and 
 ============================================================
 REST Operator
 - Rest operator use case number 2
-- collecting parameters when passing in the functions. 
+- collecting/gathering parameters when passing in the functions. 
 ============================================================
 */
+
+// arrays
+const fruit = ['apple', 'orange', 'lemon', 'Pie'];
+const [first, second, ...fruits] = fruit;
+console.log(first, fruits);
+
+// objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
+
+// objects
+const person = { name: 'john', lastName: 'smith', job: 'developer' };
+const { job, ...rest } = person;
+console.log(job, rest);
