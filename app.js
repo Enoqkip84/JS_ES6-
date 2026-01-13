@@ -599,16 +599,12 @@ Rest Operators are used in two different ways: Destructuring arrays/objects and 
 */
 
 //arrays
-const fruit = ['apple', 'orange', 'lemon'];
-const [first] = fruit;
-console.log(first);
+const fruit = ['apple', 'orange', 'lemon', 'Pie'];
+const [first, second, ...rest] = fruit;
+console.log(first, rest);
 
-// objects
-const person = {
-  name: 'john',
-  lastName: 'smith',
-  job: 'developer',
-};
-
+// objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
+const person = { name: 'john', lastName: 'smith', job: 'developer' };
 const { job } = person;
 console.log(job);
+// const { job } = person;
