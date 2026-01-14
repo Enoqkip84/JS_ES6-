@@ -653,8 +653,21 @@ Array.of
 -of creates a new Array instance from variable number of arguments.
 */
 
-const example = ['one', 'two', 'three'];
-console.log(example);
-console.log(example.map);
-console.log(example.from);
-console.log(example.of);
+// const example = ['one', 'two', 'three'];
+// // console.log(example);
+// // console.log(example.map);
+// // console.log(example.from);
+// // console.log(example.of);
+// const friends = Array.of('John', 2, true);
+// console.log(friends);
+
+/*
+============================================================
+Array.from - strings and rguments object
+============================================================
+-returns Array Object from any object with a lenght property or an iterable object.
+-from turns array-like/ish into array - string, nodeList, set
+*/
+
+const udemy = 'udemy';
+console.log(Array.from(udemy));
