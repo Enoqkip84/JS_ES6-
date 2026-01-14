@@ -716,30 +716,76 @@ find, findIndex, every, some
 -some - at least one item
 */
 
-const people = [
-  { id: 1, name: 'john' },
-  { id: 2, name: 'peter' },
-  { id: 3, name: 'anna' },
-];
+// const people = [
+//   { id: 1, name: 'john' },
+//   { id: 2, name: 'peter' },
+//   { id: 3, name: 'anna' },
+// ];
 
-// const anna = people.filter((person) => person.name == 'anna');
+// // const anna = people.filter((person) => person.name == 'anna');
 
-// console.log(anna);
-// console.log(anna[0].name);
-// console.log(anna[0].id);
+// // console.log(anna);
+// // console.log(anna[0].name);
+// // console.log(anna[0].id);
 
-// find
-// const anna = people.find((person) => person.name === 'anna');
-// console.log(anna);
+// // find
+// // const anna = people.find((person) => person.name === 'anna');
+// // console.log(anna);
 
-const person = people.findIndex((item) => item.id === 3);
-console.log(person);
-const newPeople = people.slice(0, person);
-console.log(newPeople);
+// const person = people.findIndex((item) => item.id === 3);
+// console.log(person);
+// const newPeople = people.slice(0, person);
+// console.log(newPeople);
 
-const grades = ['A', 'B', 'A', 'B', 'C'];
-const goodGrades = ['A', 'B', 'A', 'B'];
-const allGoodGrades = goodGrades.every((grade) => grade !== 'C');
-console.log(allGoodGrades);
-const oneBadGrade = grades.some((grades) => grades === 'C');
-console.log(oneBadGrade);
+// const grades = ['A', 'B', 'A', 'B', 'C'];
+// const goodGrades = ['A', 'B', 'A', 'B'];
+// const allGoodGrades = goodGrades.every((grade) => grade !== 'C');
+// console.log(allGoodGrades);
+// const oneBadGrade = grades.some((grades) => grades === 'C');
+// console.log(oneBadGrade);
+
+/*
+============================================================
+"for in" loop ============================================================
+-This iterates over object properties
+-Not advised to use it on arrays, especially if the order is important.
+-on arrays, use 'for of' loop instead
+*/
+// const person = {
+//   name: 'john',
+//   age: 25,
+//   status: 'student',
+// };
+
+// // console.log(person);
+// for (const propertyName in person) {
+//   console.log(`${propertyName}:${person[propertyName]}`);
+// }
+
+/*
+============================================================
+Object.keys()
+============================================================
+-three methods to convert objects into arrays
+-Object.keys() - Converts property names into array
+-Object.values() - converts property values into array
+-Object.entries() converts both
+*/
+
+const person = {
+  name: 'john',
+  age: 25,
+  status: 'student',
+};
+
+// keys
+const keys = Object.keys(person);
+console.log(keys);
+
+// values
+const keysValue = Object.values(person);
+console.log(keysValue);
+
+// entries
+const keysValueBoth = Object.entries(person);
+console.log(keysValueBoth);
