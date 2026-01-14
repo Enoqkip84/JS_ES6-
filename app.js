@@ -620,7 +620,7 @@ REST Operator
 // arrays
 const fruit = ['apple', 'orange', 'lemon', 'Pie'];
 const [first, second, ...fruits] = fruit;
-console.log(first, fruits);
+// console.log(first, fruits);
 
 // objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
 
@@ -629,8 +629,16 @@ const person = { name: 'john', lastName: 'smith', job: 'developer' };
 const { job, ...rest } = person;
 // console.log(job, rest);
 
+const testScores = [78, 84, 948, 9494, 94, 48, 48, 48];
+
 const getAverage = (name, ...scores) => {
   console.log(name);
   console.log(scores);
+  let total = 0;
+  for (const score of scores) {
+    total += score;
+  }
+  console.log(`${name}'s average score is ${total / scores.length}`);
 };
-getAverage();
+getAverage(person.name, 78, 87, 98, 998, 9098);
+getAverage(person.name, ...testScores); //deep!
