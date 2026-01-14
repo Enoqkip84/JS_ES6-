@@ -663,22 +663,45 @@ Array.of
 
 /*
 ============================================================
-Array.from - strings and rguments object
+Array.from - strings and arguments object
 ============================================================
 -returns Array Object from any object with a lenght property or an iterable object.
 -from turns array-like/ish[has a lenght, but not real array] into array ->(think of) string, nodeList, set. 
 */
 
-const udemy = 'udemy';
-console.log(Array.from(udemy));
+// const udemy = 'udemy';
+// console.log(Array.from(udemy));
 
-//mind grenade
-function countTotal() {
-  // console.log(arguments);
-  let total = Array.from(arguments).reduce(
-    (total, currNum) => (total += currNum),
-    0
-  );
-  console.log(total);
-}
-countTotal(67, 78, 88, 99, 107, 1110);
+// //mind grenade
+// function countTotal() {
+//   // console.log(arguments);
+//   let total = Array.from(arguments).reduce(
+//     (total, currNum) => (total += currNum),
+//     0
+//   );
+//   console.log(total);
+// }
+// countTotal(67, 78, 88, 99, 107, 1110);
+
+/*
+============================================================
+nodeList
+============================================================
+*/
+
+const p = document.querySelectorAll('p');
+const result = document.getElementById('result');
+const second = document.getElementById('second');
+
+// console.log(p);
+let newText = Array.from(p);
+// console.log(newText);
+newText = newText.map((item) => `<span>${item.textContent}</span>`).join(' ');
+
+result.innerHTML = newText;
+
+const text = Array.from(document.querySelectorAll('p'), (item) => {
+  return `<span>${item.textContent}</span>`;
+}).join(' ');
+
+second.innerHTML = text;
