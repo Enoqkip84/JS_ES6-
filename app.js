@@ -689,19 +689,29 @@ nodeList
 ============================================================
 */
 
-const p = document.querySelectorAll('p');
-const result = document.getElementById('result');
-const second = document.getElementById('second');
+// const p = document.querySelectorAll('p');
+// const result = document.getElementById('result');
+// const second = document.getElementById('second');
 
-// console.log(p);
-let newText = Array.from(p);
-// console.log(newText);
-newText = newText.map((item) => `<span>${item.textContent}</span>`).join(' ');
+// // console.log(p);
+// let newText = Array.from(p);
+// // console.log(newText);
+// newText = newText.map((item) => `<span>${item.textContent}</span>`).join(' ');
 
-result.innerHTML = newText;
+// result.innerHTML = newText;
 
-const text = Array.from(document.querySelectorAll('p'), (item) => {
-  return `<span>${item.textContent}</span>`;
-}).join(' ');
+// const text = Array.from(document.querySelectorAll('p'), (item) => {
+//   return `<span>${item.textContent}</span>`;
+// }).join(' ');
 
-second.innerHTML = text;
+// second.innerHTML = text;
+
+/*
+============================================================
+find, findIndex, every, some
+============================================================
+-find - gets specific item;
+-findIndex - get's index of the item;
+-every- every item in the array
+-some - at least one item
+*/
