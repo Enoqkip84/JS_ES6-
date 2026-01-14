@@ -666,8 +666,19 @@ Array.of
 Array.from - strings and rguments object
 ============================================================
 -returns Array Object from any object with a lenght property or an iterable object.
--from turns array-like/ish into array - string, nodeList, set
+-from turns array-like/ish[has a lenght, but not real array] into array ->(think of) string, nodeList, set. 
 */
 
 const udemy = 'udemy';
 console.log(Array.from(udemy));
+
+//mind grenade
+function countTotal() {
+  // console.log(arguments);
+  let total = Array.from(arguments).reduce(
+    (total, currNum) => (total += currNum),
+    0
+  );
+  console.log(total);
+}
+countTotal(67, 78, 88, 99, 107, 1110);
