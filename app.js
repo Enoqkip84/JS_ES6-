@@ -778,13 +778,13 @@ const person = {
   status: 'student',
 };
 
-// keys
-const keys = Object.keys(person);
-console.log(keys);
+// // keys
+// const keys = Object.keys(person);
+// console.log(keys);
 
-// values
-const keysValue = Object.values(person);
-console.log(keysValue);
+// // values
+// const keysValue = Object.values(person);
+// console.log(keysValue);
 
 // entries
 const keysValueBoth = Object.entries(person);
