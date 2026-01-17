@@ -790,6 +790,7 @@ const person = {
 const keysValueBoth = Object.entries(person);
 // console.log(keysValueBoth);
 
+// map method
 const newResult = keysValueBoth.map((item) => {
   // console.log(item);
   const [first, second] = item;
