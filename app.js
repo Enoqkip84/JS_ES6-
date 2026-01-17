@@ -811,8 +811,35 @@ Object.keys()
 ============================================================
 new Set()
 ============================================================
--three methods to convert objects into arrays
--Object.keys() - Converts property names into array
--Object.values() - converts property values into array
--Object.entries() converts both
+stores a collection of unique values of any type
+-new Set()
+-add(value)
+-has() - returns either true or false
+-delete(value)
+clear() - remove all the values
+has(value)
+
+iterators
+entries(), keys(), value(), forEach()
 */
+
+const unique = new Set();
+const random = 'third';
+unique.add('first');
+unique.add('second');
+unique.add(random);
+unique.add('fourth');
+unique.add(4);
+
+// delete - returs either true or false afterwards
+const result = unique.delete('fifth');
+console.log(result);
+// clear
+// const clearAll = unique.clear();
+
+console.log(unique);
+// has
+const itsValue = unique.has(4);
+console.log(itsValue);
+
+// iterators
