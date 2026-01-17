@@ -799,3 +799,10 @@ const newResult = keysValueBoth.map((item) => {
 });
 
 console.log(newResult);
+
+// for of
+
+for (const item of result) {
+  const [first, second] = item;
+  console.log(first, second);
+}
