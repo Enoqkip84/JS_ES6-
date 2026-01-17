@@ -794,15 +794,15 @@ const keysValueBoth = Object.entries(person);
 const newResult = keysValueBoth.map((item) => {
   // console.log(item);
   const [first, second] = item;
-  console.log(first, second);
+  // console.log(first, second);
   return second;
 });
 
-console.log(newResult);
+// console.log(newResult);
 
 // for of
 
-for (const item of result) {
-  const [first, second] = item;
+for (const [first, second] of keysValueBoth) {
+  // const [first, second] = item;
   console.log(first, second);
 }
