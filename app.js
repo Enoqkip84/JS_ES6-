@@ -788,4 +788,13 @@ const person = {
 
 // entries
 const keysValueBoth = Object.entries(person);
-console.log(keysValueBoth);
+// console.log(keysValueBoth);
+
+const newResult = keysValueBoth.map((item) => {
+  // console.log(item);
+  const [first, second] = item;
+  console.log(first, second);
+  return second;
+});
+
+console.log(newResult);
