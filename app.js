@@ -823,23 +823,90 @@ iterators
 entries(), keys(), value(), forEach()
 */
 
-const unique = new Set();
-const random = 'third';
-unique.add('first');
-unique.add('second');
-unique.add(random);
-unique.add('fourth');
-unique.add(4);
+// const unique = new Set();
+// const random = 'third';
+// unique.add('first');
+// unique.add('second');
+// unique.add(random);
+// unique.add('fourth');
+// unique.add(4);
 
-// delete - returs either true or false afterwards
-const result = unique.delete('fifth');
-console.log(result);
-// clear
-// const clearAll = unique.clear();
+// // delete - returs either true or false afterwards
+// const result = unique.delete('fifth');
+// console.log(result);
+// // clear
+// // const clearAll = unique.clear();
 
-console.log(unique);
-// has
-const itsValue = unique.has(4);
-console.log(itsValue);
+// console.log(unique);
+// // has
+// const itsValue = unique.has(4);
+// console.log(itsValue);
 
-// iterators
+// // iterators
+
+/*
+============================================================
+new Set() - accept iterable objects
+============================================================
+*/
+
+// const products = [
+//   {
+//     title: 'high-back bench',
+//     company: 'ikea',
+//   },
+//   {
+//     title: 'albany table',
+//     company: 'marcos',
+//   },
+//   {
+//     title: 'accent chair',
+//     company: 'ceressa',
+//   },
+//   {
+//     title: 'wooden table',
+//     company: 'ikea',
+//   },
+// ];
+// console.log(products);
+
+// // map method
+// const companies = products.map((item) => item.company);
+// console.log(companies);
+
+// // set - unique companies
+// const uniqueCompanies = new Set(companies);
+// console.log(uniqueCompanies);
+// // turn to array
+
+// const finalCompanies = ['first', ...uniqueCompanies];
+// console.log(finalCompanies);
+
+/*
+============================================================
+Simplifying to one code 
+============================================================
+*/
+// const result = ['all', ...new Set(products.map((items) => items.company))];
+// console.log(result);
+
+/*
+============================================================
+String includes()
+============================================================
+*/
+
+const products = [
+  { title: 'high-back bench' },
+  { title: 'albany table' },
+  { title: 'accent chair' },
+  { title: 'wooden table' },
+];
+// const firstNAme = 'john';
+// // const result = firstNAme.includes('j', 1);
+// const product = {
+//   title: 'Leather Chair',
+// };
+
+// const resalu = product.title.includes('le');
+// console.log(resalu);
