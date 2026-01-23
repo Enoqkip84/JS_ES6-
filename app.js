@@ -898,24 +898,51 @@ String includes()
 ============================================================
 */
 
-const products = [
-  { title: 'Modern Poster' },
-  { title: 'Bar Stool' },
-  { title: 'Armchair' },
-  { title: 'Leather Chair' },
-];
-// const firstNAme = 'john';
-// const result = firstNAme.includes('j', 1);
+// const products = [
+//   { title: 'Modern Poster' },
+//   { title: 'Bar Stool' },
+//   { title: 'Armchair' },
+//   { title: 'Leather Chair' },
+// ];
+// // const firstNAme = 'john';
+// // const result = firstNAme.includes('j', 1);
 
-// const product = {
-//   title: 'Leather Chair',
-// };
+// // const product = {
+// //   title: 'Leather Chair',
+// // };
 
-// const resalt = product.title.includes('Le');
-// console.log(resalt);
+// // const resalt = product.title.includes('Le');
+// // console.log(resalt);
 
-const text = 'a';
-const filteredProducts = products.filter((product) =>
-  product.title.toLowerCase().includes(text),
-);
-console.log(filteredProducts);
+// const text = 'a';
+// const filteredProducts = products.filter((product) =>
+//   product.title.toLowerCase().includes(text),
+// );
+// console.log(filteredProducts);
+
+/*
+============================================================
+Array includes()
+- checks if the item is an array
+-Useful ub the conditional statements
+============================================================
+*/
+
+// const groceries = ['milk', 'bread', 'meat'];
+
+// // const item = groceries.includes('milk', 1);
+// // console.log(item);
+// let randomItem = 'lemon';
+// randomItem = 'bread';
+
+// if (groceries.includes(randomItem)) {
+//   console.log(`Yeah! it is on the list`);
+// }
+
+/*
+=================================================
+IMPORTANT INFORMATION
+=================================================
+1) Only General Overview
+2) More Features Coming Up
+*/
