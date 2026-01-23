@@ -893,22 +893,29 @@ Simplifying to one code
 /*
 ============================================================
 String includes()
-- checks if string include another string
+- checks if string contains another string
 -Applied when implementing search in web pages
 ============================================================
 */
 
 const products = [
-  { title: 'high-back bench' },
-  { title: 'albany table' },
-  { title: 'accent chair' },
-  { title: 'wooden table' },
+  { title: 'Modern Poster' },
+  { title: 'Bar Stool' },
+  { title: 'Armchair' },
+  { title: 'Leather Chair' },
 ];
 // const firstNAme = 'john';
-// // const result = firstNAme.includes('j', 1);
+// const result = firstNAme.includes('j', 1);
+
 // const product = {
 //   title: 'Leather Chair',
 // };
 
-// const resalu = product.title.includes('le');
-// console.log(resalu);
+// const resalt = product.title.includes('Le');
+// console.log(resalt);
+
+const text = 'a';
+const filteredProducts = products.filter((product) =>
+  product.title.toLowerCase().includes(text),
+);
+console.log(filteredProducts);
