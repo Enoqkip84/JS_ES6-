@@ -894,6 +894,7 @@ Simplifying to one code
 ============================================================
 String includes()
 - checks if string include another string
+-Applied when implementing search in web pages
 ============================================================
 */
 
