@@ -893,6 +893,7 @@ Simplifying to one code
 /*
 ============================================================
 String includes()
+- checks if string include another string
 ============================================================
 */
 
