@@ -643,7 +643,7 @@ REST Operator
 // arrays;
 const fruit = ['apple', 'orange', 'lemon', 'Pie'];
 const [first, second, ...fruits] = fruit;
-console.log(first, fruits);
+// console.log(first, fruits);
 
 // objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
 
