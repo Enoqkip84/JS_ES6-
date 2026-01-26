@@ -677,6 +677,7 @@ Array.of
 */
 
 // const example = ['one', 'two', 'three'];
+
 // // console.log(example);
 // // console.log(example.map);
 // // console.log(example.from);
@@ -700,7 +701,7 @@ Array.from - strings and arguments object
 //   // console.log(arguments);
 //   let total = Array.from(arguments).reduce(
 //     (total, currNum) => (total += currNum),
-//     0
+//     0,
 //   );
 //   console.log(total);
 // }
