@@ -355,6 +355,10 @@ Array Destructuring
 // const [enemy, , bob, , kelly] = friends; //skip using double commas, NB name does not matter since index is what we are looking at.
 // console.log(enemy, bob, kelly);
 
+// Exercises
+// const [orange, banana, lemon] = fruit;
+// console.log(orange, banana, lemon);
+
 /*
 =============================================================
 SWAP Variables
@@ -404,7 +408,7 @@ Objects Destructuring
 
 // console.log(firstName, lastName, sister);
 
-// destructuring
+// // destructuring
 // const {
 //   first: firstName,
 //   last,
@@ -413,6 +417,16 @@ Objects Destructuring
 // } = bob; //unlike array, properties name needs to match!!!!
 //we can also add alias name if we wan to change the name e.g adding alias firstNAme to firts, by using : (colon) especially if the name is already taken somewhere in the large project variable names.
 // console.log(firstName, last, city, favSister);
+
+// excercises
+// const {
+//   first: firstnmae,
+//   last,
+//   city,
+//   sibling: { sister },
+// } = bob;
+
+// console.log(firstnmae, last, city, sister);
 
 /*
 =============================================================
@@ -439,10 +453,10 @@ functions Destructuring!
 //     sister: { twin },
 //   },
 // }) {
-//   //instead of passing the parameter as a whole object, we destructure first.
-//   //very useful in react, we have components i.e params and pass in props like arguments
-//   // const { first, last, city, sibling,{sister:sissy}} = person;
-//   console.log(first, last, city, twin);
+//instead of passing the parameter as a whole object, we destructure first.
+//very useful in react, we have components i.e params and pass in props like arguments
+// const { first, last, city, sibling,{sister:sissy}} = person;
+// console.log(first, last, city, twin);
 // }
 // printPerson(bob);
 
@@ -459,7 +473,7 @@ New String Methods
 
 //StartsWith
 // console.log(person);
-// console.log(person.startsWith('Pe')); //Case sensitive- trie
+// console.log(person.startsWith('Pe')); //Case sensitive- true
 // console.log(person.startsWith('pe')); //Case sensitive-false
 // console.log(employee.startsWith('EMP', 6));
 
@@ -516,19 +530,21 @@ Splits into single items and copy them
 */
 // const udemy = 'udemy';
 // const letters = [...udemy];
-// console.log(letters);
+// // console.log(letters);
 
 // const boys = ['john', 'peter', 'bob'];
 // const girls = ['susan', 'anna'];
 // const bestFriend = 'anorld';
 
 // const friends = [...boys, bestFriend, ...girls];
-// console.log(friends);
+// // console.log(friends);
 // // reference
 // // const newFriends = friends;
 
 // // copying without referencing
 // const newFriends = [...friends];
+// console.log(newFriends);
+
 // newFriends[0] = 'Karina';
 // console.log(newFriends);
 // console.log(friends);
@@ -546,8 +562,8 @@ Spread Operator - Objects
 //   job: 'developer',
 // };
 
-// // const newPerson = { ...person, city: 'chicago' };
-// //overwrighting
+// const newPerson = { ...person, city: 'chicago' };
+//overwrighting
 // const newPerson = { ...person, city: 'chicago', name: 'peter' }; //overridding the name variable with peter
 
 // console.log(newPerson);
@@ -565,11 +581,10 @@ Spread Operator - DOM ELEMENTS
 // const headings = document.querySelectorAll('h1');
 // const result = document.getElementById('result');
 
-// // console.log(headings);
-// // console.log(result);
+// console.log(headings);
+// console.log(result);
 
-// const text = [...headings]
-//   .map((item) => `<span>${item.textContent}</span>`)
+// const text = [...headings].map((item) => `<span>${item.textContent}</span>`)
 //   .join('');
 // result.innerHTML = text;
 
@@ -583,7 +598,7 @@ Spread Operator - FUNCTIONS ARGUMENTS
 */
 // const numbers = [23, 45, 66, 88, 2345];
 
-// // console.log(Math.max(4, 5, 6, 7, 88, 99));
+// console.log(Math.max(4, 5, 6, 7, 88, 99));
 // console.log(Math.max(...numbers));
 
 // const john = ['John', 'sanders'];
@@ -607,12 +622,12 @@ NB: the three dots behaves differently when using spread and Rest.
 Rest Operators are used in two different ways: Destructuring arrays/objects and when gathering parameters in a function 
 */
 
-//arrays
+// arrays
 // const fruit = ['apple', 'orange', 'lemon', 'Pie'];
 // const [first, second, ...fruits] = fruit;
 // console.log(first, fruits);
 
-// // objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
+// objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
 // const person = { name: 'john', lastName: 'smith', job: 'developer' };
 // const { job, ...rest } = person;
 // console.log(job, rest);
@@ -625,31 +640,31 @@ REST Operator
 ============================================================
 */
 
-// arrays
-// const fruit = ['apple', 'orange', 'lemon', 'Pie'];
-// const [first, second, ...fruits] = fruit;
-// console.log(first, fruits);
+// arrays;
+const fruit = ['apple', 'orange', 'lemon', 'Pie'];
+const [first, second, ...fruits] = fruit;
+console.log(first, fruits);
 
 // objects- when destructuring objects, unlike array, we need to look for proper property name, matching in order to access the property.
 
 // objects
-// const person = { name: 'john', lastName: 'smith', job: 'developer' };
-// const { job, ...rest } = person;
-// // console.log(job, rest);
+const person = { name: 'john', lastName: 'smith', job: 'developer' };
+const { job, ...rest } = person;
+// console.log(job, rest);
 
-// const testScores = [78, 84, 948, 9494, 94, 48, 48, 48];
+const testScores = [78, 84, 948, 9494, 94, 48, 48, 48];
 
-// const getAverage = (name, ...scores) => {
-//   console.log(name);
-//   console.log(scores);
-//   let total = 0;
-//   for (const score of scores) {
-//     total += score;
-//   }
-//   console.log(`${name}'s average score is ${total / scores.length}`);
-// };
-// getAverage(person.name, 78, 87, 98, 998, 9098);
-// getAverage(person.name, ...testScores); //deep!
+const getAverage = (name, ...scores) => {
+  console.log(name);
+  console.log(scores);
+  let total = 0;
+  for (const score of scores) {
+    total += score;
+  }
+  console.log(`${name}'s average score is ${total / scores.length}`);
+};
+getAverage(person.name, 78, 87, 98, 998, 9098);
+getAverage(person.name, ...testScores); //deep!
 
 /*
 ============================================================
