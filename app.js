@@ -676,14 +676,14 @@ Array.of
 -of creates a new Array instance from variable number of arguments.
 */
 
-// const example = ['one', 'two', 'three'];
+const example = ['one', 'two', 'three'];
 
-// // console.log(example);
-// // console.log(example.map);
-// // console.log(example.from);
-// // console.log(example.of);
-// const friends = Array.of('John', 2, true);
-// console.log(friends);
+// console.log(example);
+// console.log(example.map);
+// console.log(example.from);
+// console.log(example.of);
+const friends = Array.of('John', 2, true);
+console.log(friends);
 
 /*
 ============================================================
