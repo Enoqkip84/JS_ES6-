@@ -693,19 +693,19 @@ Array.from - strings and arguments object
 -from turns array-like/ish[has a lenght, but not real array] into array ->(think of) string, nodeList, set. 
 */
 
-// const udemy = 'udemy';
-// console.log(Array.from(udemy));
+const udemy = 'udemy';
+console.log(Array.from(udemy));
 
-// //mind grenade
-// function countTotal() {
-//   // console.log(arguments);
-//   let total = Array.from(arguments).reduce(
-//     (total, currNum) => (total += currNum),
-//     0,
-//   );
-//   console.log(total);
-// }
-// countTotal(67, 78, 88, 99, 107, 1110);
+//mind grenade
+function countTotal() {
+  // console.log(arguments);
+  let total = Array.from(arguments).reduce(
+    (total, currNum) => (total += currNum),
+    0,
+  );
+  console.log(total);
+}
+countTotal(67, 78, 88, 99, 107, 1110);
 
 /*
 ============================================================
