@@ -288,14 +288,22 @@ Arrow Functions - Select Elements and  'this'
 
 // const btn = document.querySelector('.btn');
 // btn.addEventListener('click', function () {
-//   console.log(this);
+//   // console.log(this);
 //   setTimeout(() => {
 //     console.log(this);
 
 //     this.style.color = 'black';
+//     // this.style.background = 'yellow';
+//   }, 1000);
+//   setTimeout(() => {
+//     console.log(this);
+
+//     // this.style.color = 'black';
 //     this.style.background = 'yellow';
 //   }, 2000);
 // });
+
+// console.log(btn);
 
 /*
 =============================================================
@@ -746,7 +754,8 @@ find, findIndex, every, some
 
 /*
 ============================================================
-"for in" loop ============================================================
+"for in" loop 
+============================================================
 -This iterates over object properties
 -Not advised to use it on arrays, especially if the order is important.
 -on arrays, use 'for of' loop instead
@@ -941,7 +950,7 @@ Array includes()
 
 /*
 =================================================
-IMPORTANT INFORMATION
+IMPORTANT INFORMATION - ESNEXT
 =================================================
 1) Only General Overview
 2) More Features Coming Up
