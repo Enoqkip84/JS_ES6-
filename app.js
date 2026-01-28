@@ -676,14 +676,14 @@ Array.of
 -of creates a new Array instance from variable number of arguments.
 */
 
-const example = ['one', 'two', 'three'];
+// const example = ['one', 'two', 'three'];
 
-// console.log(example);
-// console.log(example.map);
-// console.log(example.from);
-// console.log(example.of);
-const friends = Array.of('John', 2, true);
-console.log(friends);
+// // console.log(example);
+// // console.log(example.map);
+// // console.log(example.from);
+// // console.log(example.of);
+// const friends = Array.of('John', 2, true);
+// console.log(friends);
 
 /*
 ============================================================
@@ -693,19 +693,19 @@ Array.from - strings and arguments object
 -from turns array-like/ish[has a lenght, but not real array] into array ->(think of) string, nodeList, set. 
 */
 
-const udemy = 'udemy';
-console.log(Array.from(udemy));
+// const udemy = 'udemy';
+// console.log(Array.from(udemy));
 
-//mind grenade
-function countTotal() {
-  // console.log(arguments);
-  let total = Array.from(arguments).reduce(
-    (total, currNum) => (total += currNum),
-    0,
-  );
-  console.log(total);
-}
-countTotal(67, 78, 88, 99, 107, 1110);
+// //mind grenade
+// function countTotal() {
+//   // console.log(arguments);
+//   let total = Array.from(arguments).reduce(
+//     (total, currNum) => (total += currNum),
+//     0,
+//   );
+//   console.log(total);
+// }
+// countTotal(67, 78, 88, 99, 107, 1110);
 
 /*
 ============================================================
